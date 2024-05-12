@@ -3,26 +3,26 @@
 @import "tailwindcss/utilities";
 @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:wght@400;500;700&display=swap");
 
-/* * {
-  font-family: font-black-ops-one;
-} */
 /* CSS */
+
 .header {
   background-color: #000;
-  padding: 1rem; /* Equivalent to py-4 */
+  padding: 1.5rem;
+  height: 10vh;
 }
 
 .header h1 {
-  font-size: 1.125rem; /* Equivalent to text-lg */
+  font-size: 1.125rem;
   font-family: "Black Ops One", sans-serif;
   text-align: center;
   color: #fff;
 }
 
 .form-container {
-  width: 60%; /* Equivalent to w-3/5 */
+  width: 60%;
   margin: auto;
-  padding-top: 1.25rem; /* Equivalent to py-5 */
+  padding-top: 1.25rem;
+  height: 10vh;
 }
 
 .form {
@@ -38,13 +38,50 @@
 
 .input-field {
   border: 2px solid #000;
-  border-radius: 0.375rem; /* Equivalent to rounded-lg */
-  padding: 0.2rem 1rem; /* Equivalent to px-2 */
+  border-radius: 0.375rem;
+  padding: 0.2rem 1rem;
 }
 
 .submit-button {
-  background-color: #6b7280; /* Equivalent to bg-slate-400 */
-  padding: 0.2rem 0.75rem; /* Equivalent to px-3 */
-  border-radius: 0.375rem; /* Equivalent to rounded-lg */
+  background-color: #6b7280;
+  padding: 0.2rem 0.75rem;
+  border-radius: 0.375rem;
   color: #fff;
+}
+
+.list {
+  width: 85%;
+  margin: 20px auto;
+  height: 55vh;
+}
+
+.list-item {
+  width: 25%;
+  float: left;
+  box-sizing: border-box;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  text-align: center;
+  list-style: none;
+  display: flex;
+}
+
+.buttons {
+  height: 10vh;
+  background-color: #6b7280;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background-color: #000;
+  border-radius: 5px;
+  margin: 20px;
+  color: #fff;
+  padding: 7.5px;
+}
+
+.stats {
+  height: 10vh;
+  background-color: #000;
 }
