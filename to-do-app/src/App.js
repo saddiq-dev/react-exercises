@@ -7,7 +7,7 @@ export default function App() {
     <>
       <Header />
       <Form />
-      <List />
+      <List tasksData={tasks} />
       <Buttons />
       <Stats />
     </>
@@ -44,11 +44,21 @@ function List() {
   return (
     <div className="list">
       <div className="list-item">
-        <input type="checkbox"></input>
-        <p>Item 1</p>
-        <button>❌</button>
+        {tasks.map((task) => (
+          <Item tasksData={task} key={task.task} />
+        ))}
       </div>
     </div>
+  );
+}
+
+function Item({ tasksData }) {
+  return (
+    <>
+      <input type="checkbox" value="ticked"></input>
+      <p>{tasksData.task}</p>
+      <button>❌</button>
+    </>
   );
 }
 
